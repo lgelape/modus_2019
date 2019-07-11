@@ -40,7 +40,7 @@ O professor estará disponível em todos os dias do curso, das 14h-15h, na sala 
 
 ## Conteúdo das aulas
 
-### Aula 1 (15/07, segunda-feira)
+### [Aula 1 (15/07, segunda-feira)](https://github.com/lgelape/modus_2019/blob/master/Aula1/Aula1.md)
 
 **Conhecendo os dados: análise descritiva**:
 
