@@ -173,11 +173,14 @@ table(banco$area_atuacao)
 prop.table(table(banco$area_atuacao)) * 100
 ```
 
-Por fim, nós podemos fazer um **cruzamento de 2 variáveis categóricas** numa mesma tabela:
+Podemos unir essas duas tabelas com a frequência relativa em uma única tabela:
 
 ```
-table(banco$area_atuacao, banco$meio_transporte)
-prop.table(table(banco$area_atuacao, banco$meio_transporte)) * 100
+time_absoluta <- table(banco$time)
+time_relativa <- prop.table(table(banco$time)) * 100
+
+tabela_time <- rbind(time_absoluta, time_relativa)
+row.names(tabela_time) <- c("Frequência Absoluta", "Frequência Relativa")
 ```
 
 # Resumo do conteúdo trabalhado:
