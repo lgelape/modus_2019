@@ -183,6 +183,16 @@ tabela_time <- rbind(time_absoluta, time_relativa)
 row.names(tabela_time) <- c("Frequência Absoluta", "Frequência Relativa")
 ```
 
+E para incluir a linha/coluna com os totais, usamos a função `addmargins`.
+
+```
+atuacao_absoluta <- addmargins(table(banco$area_atuacao))
+atuacao_relativa <- prop.table(table(banco$area_atuacao)) * 100
+
+tabela_atuacao <- rbind(atuacao_absoluta, atuacao_relativa)
+row.names(tabela_atuacao) <- c("Frequência Absoluta", "Frequência Relativa")
+```
+
 # Resumo do conteúdo trabalhado:
 
 * Neste tutorial, aprendemos a calcular estatísticas descritivas das nossas variáveis contínuas e categóricas.
