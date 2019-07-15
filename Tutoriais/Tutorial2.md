@@ -20,8 +20,6 @@ banco <- read.csv2("")
 
 Começaremos com o cálculo de estatísticas descritivas de variáveis contínuas, destacando as estatísticas de ordenamento e as estatísticas de momento. Por fim, vamos descrever variáveis categóricas.
 
-A representação visual dessas estatísticas será vista no Tutorial 3.
-
 ## 1.1 Estatísticas de ordenamento
 
 Os nomes das funções para o cálculo de estatísticas descritivas são, em geral, o nome em inglês ou uma abreviatura do nome dessa estatística.
