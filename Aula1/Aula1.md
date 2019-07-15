@@ -8,8 +8,8 @@
 
 Iniciamos a aula 1 com uma aula expositiva. Depois do intervalo, vamos fazer dois tutoriais:
 
-* [Tutorial 1 - Breve introdução ao R](): uma introdução à linguagem
+* [Tutorial 1 - Breve introdução ao R](https://github.com/lgelape/modus_2019/blob/master/Tutoriais/Tutorial1.md): uma introdução à linguagem
 
-* [Tutorial 2 - Conhecendo os dados: análise descritiva]()
+* [Tutorial 2 - Conhecendo os dados: análise descritiva](https://github.com/lgelape/modus_2019/blob/master/Tutoriais/Tutorial2.md)
 
-Os exercícios de fixação estarão disponíveis nessa página.
+Como tarefa de casa, tentem fazer o [exercício de fixação n. 1](). Retomaremos os pontos principais desse exercício no início da aula de amanhã.
