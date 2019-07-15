@@ -188,12 +188,11 @@ skim(banco$minutos_deslocamento)
 Podemos usar as ferramentas de manipulação de vetores, que já conhecemos, para selecionar somente as informações que nos interessam.
 
 ```
-descritivas_minutos <- skim(banco$minutos_deslocamento)
-
 # Vamos selecionar somente os elementos n, mean, sd, p0, p25, p50, p75, p100:
 
-descritivas_minutos <- descritivas_minutos[c("n", "mean", "sd", "p0", 
-                                           "p25", "p50", "p75", "p100")]
+tabela_descritivas_minutos <- t(data.frame(descritivas_minutos$value))
+
+tabela_descritivas_minutos <- tabela_descritivas_minutos[,1:10]
 
 # Agora, basta renomear a linha e as colunas e temos uma tabela pronta
 
