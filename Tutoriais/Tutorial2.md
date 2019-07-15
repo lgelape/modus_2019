@@ -15,7 +15,7 @@ O cálculo de estatísticas descritivas no R é bastante simples. Existem funç�
 Para calculá-las, vamos usar outras variáveis do questionário respondido pelos colegas. Contudo, dessa vez, para abrirmos o banco de dados, vamos usar a função `read.csv2`, ao invés da `read.table`. A `read.csv2` é uma função já programada para abrir arquivos em formato .csv separados por `;`, o que exige a inclusão de menos argumentos.
 
 ```
-banco <- read.csv2("https://raw.githubusercontent.com/lgelape/modus_2019/master/Bancos/respostas_turma.csv")
+banco <- read.csv("https://raw.githubusercontent.com/lgelape/modus_2019/master/Bancos/respostas_turma.csv")
 ```
 
 Começaremos com o cálculo de estatísticas descritivas de variáveis contínuas, destacando as estatísticas de ordenamento e as estatísticas de momento. Por fim, vamos descrever variáveis categóricas.
