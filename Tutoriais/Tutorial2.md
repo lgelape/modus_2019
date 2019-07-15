@@ -183,23 +183,7 @@ Uma função semelhante, porém mais completa, é a `skim` do pacote `skimr`.
 #install.packages("skimr")
 library(skimr)
 skim(banco$minutos_deslocamento)
-```
-
-Podemos usar as ferramentas de manipulação de vetores, que já conhecemos, para selecionar somente as informações que nos interessam.
-
-```
-# Vamos selecionar somente os elementos n, mean, sd, p0, p25, p50, p75, p100:
-
-tabela_descritivas_minutos <- t(data.frame(descritivas_minutos$value))
-
-tabela_descritivas_minutos <- tabela_descritivas_minutos[,1:10]
-
-# Agora, basta renomear a linha e as colunas e temos uma tabela pronta
-
-names(descritivas_minutos) <- c("N. obs.", "Média", "Desvio-Padrão", "Mínimo", 
-                               "1o quartil", "Mediana", "3o quartil", "Máximo")
-descritivas_minutos
-```
+``` 
 
 Outra opção é a função `describe` do pacote `describer`. Ela faz um rersumo das estatísticas descritivas de um banco de dados. Vamos testá-la com nosso `banco` completo.
 
