@@ -80,6 +80,25 @@ A função `IQR` calcula o intervalo interquartil (IIQ), isto é, a diferença e
 IQR(banco$minutos_deslocamento)
 ```
 
+### 1.1.4 Representação gráfica das estatísticas de ordenamento
+
+Como vimos na parte expositiva, as estatísticas de ordenamento são representadas graficamente por meio de um box-plot. Como o objetivo do nosso curso são as noções de estatística e não a programação em R, faremos todos os nossos gráficos a partir do R base (mas já fica a sugestão, para aqueles que não conhecem, de explorarem o pacote ggplot2). 
+
+As funções do R base para a produção de gráficos são simples, diretas e muito úteis para a exploração inicial dos dados (além disso, assim como em gráficos produzidos com o ggplot, ao especificar diversos dos argumentos das funções de gráficos do R base, podemos personalizar bastante essas imagens).
+
+Para produzirmos um boxplot, utilizamos a função `boxplot`.
+
+```
+boxplot(banco$idade)
+```
+
+Para personalizar um pouco o gráfico (o que pode ser muito útil para relatórios, artigos etc), podemos especificar alguns dos argumentos:
+
+```
+boxplot(banco$idade, main = "Distribuição da variável idade",
+        ylab = "Idade (em anos)")
+```
+
 ## 1.2 Estatísticas de momento
 
 ### 1.2.1 Média
@@ -101,6 +120,48 @@ sd(banco$minutos_deslocamento)
 
 var(banco$livros_lidos)
 sd(banco$livros_lidos)
+```
+
+### 1.2.3 Representações gráficas
+
+Tradicionalmente, as representações gráficas de variáveis contínuas são feitas por (1) histogramas; ou (2) gráficos de densidade de *kernel*.
+
+Histogramas apresentam a distribuição de uma variável segundo intervalos (pré-definidos) desta e a frequência relativa de ocorrências em cada intervalo. A função para plotar um histograma é a `hist`.
+
+```
+hist(banco$minutos_deslocamento)
+```
+
+O padrão desta função utiliza uma fórmula (de Sturges) para definir o número de intervalos. Porém, podemos definir os nossos próprios intervalos, de acordo com o que julgarmos que mais ajudaria a visualização desta distribuição (com o argumento `breaks`).
+
+```
+hist(banco$minutos_deslocamento,
+     breaks = 6, 
+     main = "Histograma do tempo de deslocamento dos alunos",
+     xlab = "Tempo de deslocamento (em minutos)",
+     ylab = "Frequência relativa")
+```
+
+Além disso, percebam também que o padrão da função retorna a frequência *absoluta* e não a relativa. Para conseguir produzir um histograma com a frequência relativa, precisamos fazer alguns ajustes (como o do bloco de código abaixo, onde transformamos a densidade em percentuais).
+
+```
+histograma_minutos <- hist(banco$minutos_deslocamento,breaks = 6)
+
+histograma_minutos$density <- histograma_minutos$counts/sum(histograma_minutos$counts)*100
+plot(histograma_minutos, freq = F,
+     main = "Histograma do tempo de deslocamento dos alunos",
+     xlab = "Tempo de deslocamento (em minutos)",
+     ylab = "Frequência relativa")
+```
+
+Por fim, temos o gráfico de densidade de *kernel*, amplamente utilizado na academia (ainda que com alguma dificuldade de compreensão do público em geral). Para produzi-lo, calculamos a densidade da variável desejada, plotando-a num gráfico.
+
+```
+densidade_livros <- density(banco$livros_lidos)
+plot(densidade_livros, 
+     main = "Gráfico de densidade do número de livros lidos por aluno no último ano",
+     xlab = "Número de livros lidos no último ano")
+
 ```
 
 ## 1.3 Resumo de estatísticas descritivas
@@ -191,6 +252,19 @@ atuacao_relativa <- prop.table(table(banco$area_atuacao)) * 100
 
 tabela_atuacao <- rbind(atuacao_absoluta, atuacao_relativa)
 row.names(tabela_atuacao) <- c("Frequência Absoluta", "Frequência Relativa")
+```
+
+### 1.4.1 Representação gráfica (gráficos de barras)
+
+Uma maneira simples (talvez óbvia) de representar variáveis categóricas é por meio de gráficos de barra, produzidos com a função `barplot()`. Para fazê-los, primeiro precisamos criar uma tabela de frequência da variável desejada e, em seguida, aplicar a função `barplot` a essa tabela.
+
+```
+tabela_times <- table(banco$times)
+
+barplot(tabela_times, 
+        main = "Times do coração dos alunos",
+        xlab = "Times de futebol",
+        ylab = "N. de alunos") 
 ```
 
 # Resumo do conteúdo trabalhado:
