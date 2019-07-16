@@ -1,4 +1,4 @@
-#Aula 2 (16/07, terça-feira)
+# Aula 2 (16/07, terça-feira)
 
 **Conteúdo da aula:**
 
