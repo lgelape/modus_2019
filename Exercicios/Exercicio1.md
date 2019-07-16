@@ -1,7 +1,5 @@
 # Exercício de fixação n. 1
 
-# Exercícios de Fixação #1 - Estatísticas descritivas
-
 Neste exercício, vamos retomar algumas das principais funções que utilizamos para calcular estatísticas descritivas.
 
 ## Variáveis categóricas
