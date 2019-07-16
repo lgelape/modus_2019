@@ -48,7 +48,7 @@ O professor estará disponível em todos os dias do curso, das 14h-15h, na sala 
 * Descrição de variáveis categóricas
 * Descrição de variáveis numéricas/quantitativas
 
-### Aula 2 (16/07, terça-feira)
+### [Aula 2 (16/07, terça-feira)](https://github.com/lgelape/modus_2019/blob/master/Aula2/Aula2.md)
 
 **Probabilidade e Inferência Estatística**:
 
