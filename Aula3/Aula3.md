@@ -1,6 +1,8 @@
 # Aula 3 (17/07, quarta-feira)
 
-**Inferência Estatística:**
+**Conteúdo da aula:**
+
+Inferência Estatística:
 
 Estimação de Parâmetros
 Intervalo de Confiança
