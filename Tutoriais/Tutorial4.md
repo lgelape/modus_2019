@@ -170,8 +170,14 @@ limite_inferior_ic_99 <- media_amostra - margem_erro_99
 limite_superior_ic_99 <- media_amostra + margem_erro_99
 ```
 
-Os intervalos de confiança dessa estimativa da média de votos dessa amostra de n = 150 dos candidatos a vereador em Belo Horizonte nesta eleição simulada são:
+Os intervalos de confiança dessa estimativa da média de votos dessa amostra de n = 150 dos candidatos a vereador em Belo Horizonte nesta eleição simulada são (v. 3.6 do R):
 
 * Com nível de confiança de 90%: entre 596 e 607 votos;
 * Com nível de confiança de 95%: entre 595 e 608 votos;
 * Com nível de confiança de 99%: entre 593 e 610 votos.
+
+Em versões anteriores do R, os intervalos de confiança (com os valores dos votos arrendondados com 0 casas decimais) estimados são:
+
+* Com nível de confiança de 90%: entre 595 e 605 votos;
+* Com nível de confiança de 95%: entre 595 e 605 votos (com o arrendondamento os ICs ficam equivalentes);
+* Com nível de confiança de 99%: entre 592 e 608 votos.
