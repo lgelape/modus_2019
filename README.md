@@ -58,7 +58,7 @@ O professor estará disponível em todos os dias do curso, das 14h-15h, na sala 
 * Teorema do Limite Central
 * Distribuição Normal
 
-### Aula 3 (17/07, quarta-feira)
+### [Aula 3 (17/07, quarta-feira)](https://github.com/lgelape/modus_2019/blob/master/Aula3/Aula3.md)
 
 **Inferência Estatística**:
 
