@@ -54,6 +54,8 @@ Sendo assim, qual é o intervalo de confiança da estimativa da proporção de c
 
 * Isto é, com um nível de confiança de 95%, entre 68,3% e 73,4% dos eleitores aprovam o trabalho do prefeito. 
 
+Para versões anteriores do R, com um nível de confiança de 95%, entre 67,7% e 72,8% dos eleitores aprovam o trabalho do prefeito.
+
 Vamos nos lembrar, porém, que podemos alterar o nível de confiança. Sendo assim, vamos estimar os intervalos de confiança para dois níveis bastante comuns nas pesquisas científicas, 90% e 99%:
 
 ```
@@ -67,10 +69,15 @@ limite_inferior_ic_99 <- proporcao - margem_erro_99
 limite_superior_ic_99 <- proporcao + margem_erro_99
 ```
 
-Quais os intervalos de confiança estimados para estes dois outros níveis de confiança?
+Quais os intervalos de confiança estimados para estes dois outros níveis de confiança? (v. 3.6 do R)
 
 * 90%: entre 68,7% e 73,0% dos eleitores aprovam o trabalho do prefeito;
 * 99%: entre 67,5% e 74,2% dos eleitores aprovam o trabalho do prefeito.
+
+No caso de versões anteriores do R, os intervalos de confiança estimados são:
+
+* 90%: entre 68,1% e 72,4% dos eleitores aprovam o trabalho do prefeito;
+* 99%: entre 66,9% e 73,6% dos eleitores aprovam o trabalho do prefeito.
 
 Portanto, como havíamos discutido, há um *trade-off* entre precisão e "confiança" na escolha do intervalo de confiança.
 
@@ -111,11 +118,17 @@ limite_inferior_ic_99 <- proporcao - margem_erro_99
 limite_superior_ic_99 <- proporcao + margem_erro_99
 ```
 
-Agora, as novas estimativas para os intervalos de confiança são:
+Agora, as novas estimativas para os intervalos de confiança são (v. 3.6 do R):
 
 * 90%: entre 67,2% e 72,5% dos eleitores aprovam o trabalho do prefeito;
 * 95%: entre 66,7% e 73,0% dos eleitores aprovam o trabalho do prefeito;
 * 99%: entre 65,7% e 74,0% dos eleitores aprovam o trabalho do prefeito.
+
+Em versões anteriores (utilizando o mesmo set.seed), essas estimativas são:
+
+* 90%: entre 66,4% e 71,8% dos eleitores aprovam o trabalho do prefeito;
+* 95%: entre 65,9% e 72,3% dos eleitores aprovam o trabalho do prefeito;
+* 99%: entre 64,9% e 73,3% dos eleitores aprovam o trabalho do prefeito.
 
 Com a redução no tamanho da amostra, os novos intervalos de confiança são maiores! Isto ocorre porque o erro-padrão agora é maior (lembre-se que o tamanho da amostra influencia no cálculo do erro-padrão). Ou seja, o tamanho de uma amostra também importa para a precisão das nossas estimativas.
 
