@@ -66,7 +66,7 @@ O professor estará disponível em todos os dias do curso, das 14h-15h, na sala 
 * Intervalo de Confiança
 * Proporções e Médias
 
-### Aula 4 e 5 (18/07 e 19/07, quinta e sexta-feira)
+### [Aula 4 e 5 (18/07 e 19/07, quinta e sexta-feira)](https://github.com/lgelape/modus_2019/tree/master/Aulas4_5/Aulas4_5.md)
 
 **Testes de Hipótese**:
 
