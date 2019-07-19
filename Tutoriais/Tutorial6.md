@@ -63,7 +63,7 @@ set.seed(1234)
 
 library(splitstackshape)
 
-munic_2015 <- read.csv("https://raw.githubusercontent.com/lgelape/modus_2019/master/Bancos/munic2015_modus2019.csv")
+munic_2015 <- read.csv2("https://raw.githubusercontent.com/lgelape/modus_2019/master/Bancos/munic2015_modus2019.csv")
 
 amostra_munic <- stratified(munic_2015, group = "regiao", size = 0.05)
 ```
