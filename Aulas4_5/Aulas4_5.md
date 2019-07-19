@@ -13,6 +13,6 @@ Testes de Hipótese:
 * Teste t
 * Teste Qui-quadrado
 
-Nestas aulas, faremos dois tutoriais. O [Tutorial 5](https://github.com/lgelape/modus_2019/blob/master/Tutoriais/Tutorial5.md) cobre testes de hipóteses univariados.
+Nestas aulas, faremos dois tutoriais. O [Tutorial 5](https://github.com/lgelape/modus_2019/blob/master/Tutoriais/Tutorial5.md) cobre testes de hipóteses univariados, e o [Tutorial 6](https://github.com/lgelape/modus_2019/blob/master/Tutoriais/Tutorial6.md) cobre os testes t e o teste qui-quadrado.
 
-O [exercício de fixação n. 4]() se refere ao conteúdo do Tutorial 5, e o [exercício de fixação n. 5]() se refere ao conteúdo do Tutorial 6.
+O [exercício de fixação n. 4](https://github.com/lgelape/modus_2019/blob/master/Exercicios/Exercicio4.md) se refere ao conteúdo do Tutorial 5, e o [exercício de fixação n. 5]() se refere ao conteúdo do Tutorial 6.
