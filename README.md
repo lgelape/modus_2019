@@ -81,4 +81,4 @@ O professor estará disponível em todos os dias do curso, das 14h-15h, na sala 
 
 ## Agradecimentos
 
-Uma versão inicial deste curso foi preparada em conjunto com Raquel D'Albuquerque, a quem agradeço pela troca de ideias e compartilhamento dos materiais de aula. Uma versão de um curso de introdução ao R que lecionei com Fernando Meireles, a quem agradeço pelo auxílio, foi a base do Tutorial 1 aqui utilizado.
+Uma versão inicial deste curso foi preparada em conjunto com Raquel D'Albuquerque, a quem agradeço pela troca de ideias e compartilhamento dos materiais de aula. Uma versão de um curso de introdução ao R que lecionei com Fernando Meireles, a quem agradeço pelo auxílio, foi a base do Tutorial 1 deste curso.
