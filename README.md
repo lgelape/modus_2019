@@ -32,7 +32,7 @@ Como material de apoio, indico 3 livros/cursos/tutoriais sobre o uso do R (todos
 
 ## Exercícios de fixação
 
-Teremos um pequeno exercício de fixação a ser realizado todos os dias após a aula (tarefas de casa). Os alunos que desejarem *feedback* em suas respostas devem salvá-las numa pasta com seu nome na pasta compartilhada da oficina no Google Drive, em um documento de Word ou R-script, **até as 23h59 de domingo, dia 21/julho.** Recomendo que não deixem os exercícios acumularem ao longo da semana.
+Teremos um pequeno exercício de fixação a ser realizado todos os dias após a aula (tarefas de casa). Os alunos que desejarem *feedback* em suas respostas devem salvá-las numa pasta com seu nome na pasta compartilhada da oficina no Google Drive, em um documento de Word ou R-script, **até as 23h59 de segunda-feira, dia 29/julho.** Recomendo que não deixem os exercícios acumularem ao longo da semana.
 
 ## Atendimento aos alunos
 
