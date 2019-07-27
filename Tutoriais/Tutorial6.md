@@ -75,8 +75,8 @@ Sendo assim, nosso teste tem em H0: as médias são iguais entre esses dois grup
 O que sugere um boxplot dessas duas variáveis em nossa amostra?
 
 ```
-boxplot(amostra_munic[amostra_munic$direta_ativos,which(amostra_munic$adm_indireta == "Não")], 
-        amostra_munic[amostra_munic$direta_ativos, which(amostra_munic$adm_indireta == "Sim")],
+boxplot(amostra_munic[which(amostra_munic$adm_indireta == "Não"), amostra_munic$direta_ativos], 
+        amostra_munic[which(amostra_munic$adm_indireta == "Sim"), amostra_munic$direta_ativos],
         main = "Distribuição do número de funcionários ativos entre municípios\nque possuem ou não possuem órgãos da administração indireta",
         names = c("Não possuem", "Possuem"),
         ylab = "N. de funcionários ativos")
